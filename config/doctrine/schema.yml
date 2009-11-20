@@ -1,0 +1,19 @@
+detect_relations: true
+
+Worker:
+  actAs:
+    Timestampable: ~
+  columns:
+    command:
+      type: string(255)
+    argv:
+      type: clob
+    priority:
+      type: integer
+      default: 1
+    status:
+      type: integer
+    started_at:
+      type: timestamp
+    processed_at:
+      type: timestamp
